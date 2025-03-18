@@ -6,8 +6,10 @@ import random;
 print("======================================");
 print("Dajamajner");
 print("======================================");
+txt = input("enter currency: ");
+print("Selected currency: ", txt);
 
 while (True):
   money = random.uniform(0, 1000);
-  print("\033[32mMoney given:", money, "$\033[0m", end="\r");
+  print("\033[32mMoney given:", money, (txt)+"s", "\033[0m", end="\r");
   time.sleep(0.1);
