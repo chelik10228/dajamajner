@@ -2,7 +2,6 @@
 
 import time;
 import random;
-from colorama import *;
 
 print("======================================");
 print("Dajamajner");
@@ -10,6 +9,5 @@ print("======================================");
 
 while (True):
   money = random.uniform(0, 1000);
-  print(Fore.GREEN, end="\r");
-  print("Money gived: ", money, "$", end="\r");
+  print("\033[32mMoney given:", money, "$\033[0m", end="\r");
   time.sleep(0.1);
