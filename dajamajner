@@ -1,11 +1,15 @@
 #!/usr/bin/python
 
 import time;
+from colorama import *;
 
+print("=====================================");
+print("Dajamajner");
 print("=====================================");
 money = 1.;
 
 while (True):
   money *= 2.;
+  print(Fore.GREEN, end="\r");
   print("Money: ", money, "$", end="\r");
   time.sleep(0.1);
