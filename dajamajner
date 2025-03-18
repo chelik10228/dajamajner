@@ -1,15 +1,15 @@
 #!/usr/bin/python
 
 import time;
+import random;
 from colorama import *;
 
-print("=====================================");
+print("======================================");
 print("Dajamajner");
-print("=====================================");
-money = 1.;
+print("======================================");
 
 while (True):
-  money *= 2.;
+  money = random.uniform(0, 1000);
   print(Fore.GREEN, end="\r");
-  print("Money: ", money, "$", end="\r");
+  print("Money gived: ", money, "$", end="\r");
   time.sleep(0.1);
