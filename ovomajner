@@ -2,9 +2,10 @@
 
 import time;
 
+print("=====================================");
 money = 1.;
 
 while (True):
   money *= 2.;
-  print(money,"$");
+  print("Money: ", money, "$", end="\r");
   time.sleep(0.1);
