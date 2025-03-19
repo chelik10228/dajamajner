@@ -2,6 +2,7 @@
 
 import random;
 import time;
+import os;
 
 print("======================================");
 print("Dajamajner");
@@ -19,5 +20,6 @@ while (True):
 
 				print((hex_string), "|", money, (txt)+"s", "\n", file=f);
 	print("======================================");
+	print("Wallet size: ", os.path.getsize('wallet.txt'))
 	print("\033[32mGiven:", money, (txt)+"s", "\033[0m");
   
