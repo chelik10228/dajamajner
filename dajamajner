@@ -9,6 +9,8 @@ print("======================================");
 txt = input("enter currency: ");
 print("Selected currency: ", txt);
 time.sleep(1);
+with open("wallet.txt", "w") as f:
+				print();
 
 while (True):
 	money = random.uniform(0, 1000);
