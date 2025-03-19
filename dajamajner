@@ -12,9 +12,11 @@ time.sleep(1);
 
 while (True):
 	money = random.uniform(0, 1000);
+	hex_string = hex(int(money));
 	with open("wallet.txt", "a") as f:
-                print(money, "\n",file=f);
-                
-	print("====================================");
+				print("======================================");
+				print((hex_string), "|", money, "\n", file=f);
+
+	print("======================================");
 	print("\033[32mGiven:", money, (txt)+"s", "\033[0m");
   
