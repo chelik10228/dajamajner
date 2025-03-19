@@ -17,7 +17,7 @@ while (True):
 	hex_string = hex(int(money));
 	with open("wallet.txt", "a") as f:
 				print("======================================");
-				print((hex_string), "|", money, "\n", file=f);
+				print((hex_string), "|", money, (txt)+"s", "\n", file=f);
 
 	print("======================================");
 	print("\033[32mGiven:", money, (txt)+"s", "\033[0m");
