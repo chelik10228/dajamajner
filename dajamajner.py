@@ -20,5 +20,5 @@ while (True):
 	print("======================================");
 	print("\033[33mWallet name: Wallet.Wal\033[0m");
 	print("Wallet size: ", os.path.getsize('wallet.txt'));
-	print("\033[32mGiven:", money, currency, "\033[0m");
+	print("\033[32mGiven:", money, currency+"s", "\033[0m");
   
